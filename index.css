@@ -1,0 +1,246 @@
+/* Css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 15%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* navigation bar logo and image */
+
+#logo{
+    margin: 15px 30px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 10px 30px;
+}
+
+/* Navigation bar: list style */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: white;
+    background-position: 10px 10px;
+    padding: 6px 6px;
+}
+
+/* home */
+#home{
+    display: flex;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("home2.jpg") no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 3px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 20px;
+    background: rgb(222, 215, 215);
+    margin-bottom: 20px;
+}
+
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+/* Client section */
+
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("https://media.istockphoto.com/id/1363583801/photo/hand-putting-hand-shaking-which-print-screen-on-wooden-cube-block-in-front-of-human-icon-for.jpg?b=1&s=170667a&w=0&k=20&c=-4rcwx14f3hz0wXqHeO6CLGrdy8ujPl0OkuQDEpYyq8=") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 50px;
+}
+
+/* Contact-section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://media.istockphoto.com/id/1290015227/photo/contact-us-concept-with-phone-email-speech-bubble-and-location-icons-with-plexus-and-red.jpg?b=1&s=170667a&w=0&k=20&c=B87cTPVtRQwuxrHrHZHCW4xzns6e0KPengZfFaDgvUE=") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Footer */
+
+footer{
+    background: rgb(241, 235, 235);
+    color: black;
+    padding: 3px 20px;
+}
+
+/* utility classes */
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(198, 194, 194);
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+}
+
+.button{
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(198, 194, 194);
+    color: black;
+    font-size: 0.9rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.center{
+    text-align: center;
+}
